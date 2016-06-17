@@ -858,6 +858,13 @@ var COMIC_LIST = {
 				{"url": "tfwf46.jpg"},
 				{"url": "tfwf47.jpg"},
 			]
+		}, "comabear": {
+			"base_url": "comics/comabear/",
+			"pages": [
+				{"url": "comabear_page1.jpg"},
+				{"url": "comabear_page2.jpg"},
+				{"url": "comabear_page3.jpg"},
+			]
 		}
 	}
 };
