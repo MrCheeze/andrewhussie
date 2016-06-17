@@ -71,6 +71,7 @@ function processComicList() {
 	}
 
 	PAGE_LIST = COMIC_LIST.comics[QUERY_STRING.comic];
+	document.getElementById('total').innerHTML = PAGE_LIST.pages.length;
 	
 	window.onpopstate = function(event) {
 		QUERY_STRING = event.state;
@@ -97,6 +98,7 @@ function updateComic() {
 	}
 	
 	window.scrollTo(0, 0);
+	document.getElementById('number').innerHTML = getCurrentPage()+1;
 }
 
 function prev() {

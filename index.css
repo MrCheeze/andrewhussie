@@ -70,7 +70,7 @@ h1, h3, a {
 	margin-bottom: 28px;
 	text-align: center;
 }
-.goback {
+.goback, .topright {
 	font-family: verdana;
 	font-size: x-small;
 	font-weight: bold;
@@ -79,4 +79,12 @@ h1, h3, a {
 .topleft {
 	position: fixed;
 	margin-top: 0;
+	top: 8px;
+	left: 8px;
+}
+.topright {
+	position: fixed;
+	margin-top: 0;
+	top: 8px;
+	right: 8px;
 }
