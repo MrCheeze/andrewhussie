@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title>Team Special Olympics - The Works of Andrew Hussie</title>
 		<link href="index.css" rel="stylesheet" type="text/css"/>
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	</head>
 	<body class="body-normal">
 		<div class="main">
@@ -55,8 +56,8 @@
 			</div>
 			<div class="item">
 				<h3><a href="comic.html?comic=scribblettes">Scribblettes</a></h3>
-				<p>Even more casually rendered comics of a random nature.</p>
-				<table class="item" style="padding-top: 5px; margin-top: 5px;"><tbody>
+				<p>Even more casually rendered comics of a random nature. <a id="showall" href="javascript:show()">(Show all)</a><a id="hideall" href="javascript:hide()">(Hide all)</a></p>
+				<table class="item" style="padding-top: 5px; margin-top: 5px;" id="scribtable"><tbody>
 					<tr>
 						<td><b>06/18/08</b></td>
 						<td><a href="comic.html?comic=scribblettes&page=288">.Com Boom Bubble</a></td>
@@ -1215,5 +1216,16 @@
 		<div class="footer">
 			<p>© Andrew Hussie and other respective artists.<br/>--<br/>Archive maintained by <a href="http://www.reddit.com/user/MrCheeze">/u/MrCheeze</a>.</p>
 		</div>
+		<script>
+			function hide() {
+				$('#scribtable,#hideall').hide();
+				$('#showall').show();
+			}
+			function show() {
+				$('#scribtable,#hideall').show();
+				$('#showall').hide();
+			}
+			hide();
+		</script>
 	</body>
 </html>
